@@ -12,9 +12,9 @@ use refaltor_Natof\Customitem\Register;
 use ReflectionObject;
 use const pocketmine\RESOURCE_PATH;
 
-class Loader
+class LoaderItem
 {
-	public static $data = [];
+    public static $data = [];
     public static $entries = [];
     public static $simpleNetToCoreMapping = [];
     public static $simpleCoreToNetMapping = [];
