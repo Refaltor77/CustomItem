@@ -13,7 +13,7 @@ class Register extends PluginBase
     public function onEnable(){
         self::$instance = $this;
         $this->saveResource('config.yml');
-        Loader::register();
+        LoaderItem::register();
     }
 
     public static function getInstance(): self{
