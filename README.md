@@ -18,4 +18,4 @@
 
 5• And you can go on file textures/item_texture.json then you write this 
 
-6• Allez enfin à votre partie, c'est fini !!🎉
+6• Finally go to you game, ist finish !
