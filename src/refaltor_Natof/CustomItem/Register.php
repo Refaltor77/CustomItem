@@ -3,7 +3,7 @@
 namespace refaltor_Natof\Customitem;
 
 use pocketmine\plugin\PluginBase;
-use refaltor_Natof\Customitem\Loader\Loader;
+use refaltor_Natof\Customitem\Loader\LoaderItem;
 
 class Register extends PluginBase
 {
