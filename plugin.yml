@@ -2,6 +2,7 @@ name: CustomItem
 version: 1.0.0
 api: 3.0.0
 main: refaltor_Natof\CustomItem\Register
+mcpe-protocol: 440
 authors:
   - refaltor
   - natof
