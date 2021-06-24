@@ -34,7 +34,7 @@ class Register extends PluginBase implements Listener
 	public function onPacket(DataPacketSendEvent $event){
 		$packet = $event->getPacket();
 		if ($packet instanceof StartGamePacket) {
-			$packet->itemTable = Loader::$entries;
+			$packet->itemTable = LoaderItem::$entries;
 		}
 	}
 
