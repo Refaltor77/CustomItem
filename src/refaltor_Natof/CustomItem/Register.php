@@ -8,7 +8,7 @@ use pocketmine\event\server\DataPacketSendEvent;
 use pocketmine\network\mcpe\protocol\ContainerClosePacket;
 use pocketmine\network\mcpe\protocol\StartGamePacket;
 use pocketmine\plugin\PluginBase;
-use refaltor_Natof\Customitem\Loader\Loader;
+use refaltor_Natof\Customitem\Loader\LoaderItem;
 
 class Register extends PluginBase implements Listener
 {
@@ -18,7 +18,7 @@ class Register extends PluginBase implements Listener
     public function onEnable(){
         self::$instance = $this;
         $this->saveResource('config.yml');
-		Loader::register();
+		LoaderItem::register();
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
     }
 
