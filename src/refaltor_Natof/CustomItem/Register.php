@@ -2,7 +2,6 @@
 
 namespace refaltor_Natof\CustomItem;
 
-use core\API\Items;
 use pocketmine\event\Listener;
 use pocketmine\event\server\DataPacketReceiveEvent;
 use pocketmine\event\server\DataPacketSendEvent;
