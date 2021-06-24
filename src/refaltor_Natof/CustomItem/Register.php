@@ -2,10 +2,13 @@
 
 namespace refaltor_Natof\CustomItem;
 
+use pocketmine\event\Listener;
+use pocketmine\event\server\DataPacketReceiveEvent;
+use pocketmine\network\mcpe\protocol\StartGamePacket;
 use pocketmine\plugin\PluginBase;
-use refaltor_Natof\Customitem\Loader\LoaderItem;
+use refaltor_Natof\Customitem\Loader\Loader;
 
-class Register extends PluginBase
+class Register extends PluginBase implements Listener
 {
     private static $instance;
 
@@ -13,10 +16,18 @@ class Register extends PluginBase
     public function onEnable(){
         self::$instance = $this;
         $this->saveResource('config.yml');
-        LoaderItem::register();
+        $this->getServer()->getPluginManager()->registerEvents($this, $this);
+        Loader::register();
     }
 
     public static function getInstance(): self{
         return self::$instance;
     }
+
+    public function onDataReceive(DataPacketReceiveEvent $event){
+		$packet = $event->getPacket();
+		if ($packet instanceof StartGamePacket) {
+			$packet->itemTable = Loader::$entries;
+		}
+	}
 }
