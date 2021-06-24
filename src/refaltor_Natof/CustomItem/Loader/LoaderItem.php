@@ -1,6 +1,6 @@
 <?php
 
-namespace refaltor_Natof\Customitem\Loader;
+namespace refaltor_Natof\CustomItem\Loader;
 
 use pocketmine\item\Item;
 use pocketmine\item\ItemFactory;
