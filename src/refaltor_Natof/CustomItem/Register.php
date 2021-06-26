@@ -8,7 +8,7 @@ use pocketmine\event\server\DataPacketSendEvent;
 use pocketmine\network\mcpe\protocol\ContainerClosePacket;
 use pocketmine\network\mcpe\protocol\StartGamePacket;
 use pocketmine\plugin\PluginBase;
-use refaltor_Natof\Customitem\Loader\LoaderItem;
+use refaltor_Natof\CustomItem\Loader\LoaderItem;
 
 class Register extends PluginBase implements Listener
 {
