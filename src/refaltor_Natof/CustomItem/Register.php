@@ -2,29 +2,32 @@
 
 namespace refaltor_Natof\CustomItem;
 
+use JackMD\ConfigUpdater\ConfigUpdater;
 use pocketmine\event\Listener;
 use pocketmine\event\server\DataPacketReceiveEvent;
 use pocketmine\event\server\DataPacketSendEvent;
 use pocketmine\network\mcpe\protocol\ContainerClosePacket;
 use pocketmine\network\mcpe\protocol\StartGamePacket;
 use pocketmine\plugin\PluginBase;
+use pocketmine\Server;
 use refaltor_Natof\CustomItem\Loader\LoaderItem;
 
 class Register extends PluginBase implements Listener
 {
-    private static $instance;
+	private static $instance;
 
 
-    public function onEnable(){
-        self::$instance = $this;
-        $this->saveResource('config.yml');
+	public function onEnable(){
+		self::$instance = $this;
+		$this->saveResource('config.yml');
 		LoaderItem::register();
-        $this->getServer()->getPluginManager()->registerEvents($this, $this);
-    }
+		$this->getServer()->getPluginManager()->registerEvents($this, $this);
+		ConfigUpdater::checkUpdate($this, $this->getConfig(), 'version', '1.0');
+	}
 
-    public static function getInstance(): self{
-        return self::$instance;
-    }
+	public static function getInstance(): self{
+		return self::$instance;
+	}
 
 	/** @var bool */
 	private $cancel_send = true;
