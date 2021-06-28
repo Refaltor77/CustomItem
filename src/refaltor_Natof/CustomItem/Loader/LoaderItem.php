@@ -8,7 +8,7 @@ use pocketmine\network\mcpe\convert\ItemTranslator;
 use pocketmine\network\mcpe\convert\ItemTypeDictionary;
 use pocketmine\network\mcpe\protocol\types\ItemTypeEntry;
 use pocketmine\utils\Config;
-use refaltor_Natof\Customitem\Register;
+use refaltor_Natof\CustomItem\Register;
 use ReflectionObject;
 use const pocketmine\RESOURCE_PATH;
 
