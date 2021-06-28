@@ -29,3 +29,5 @@
 ![alt text](https://github.com/Refaltor77/CustomItem/blob/main/images/tuto5.png)
 
 ### 6• Finally go to you game, ist finish !
+
+For exemple pack https://github.com/natof/GoldRush_Pack_faction-16x
