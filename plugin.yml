@@ -1,5 +1,5 @@
 name: CustomItem
-version: 1.1.0
+version: 2.0.0-beta
 api: 3.0.0
 main: refaltor_Natof\CustomItem\Register
 mcpe-protocol: 440
