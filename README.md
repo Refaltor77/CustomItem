@@ -12,7 +12,7 @@
 <br></br>
 ![alt text](https://github.com/Refaltor77/CustomItem/blob/main/images/tuto1.png)
 
-### 2• Create json file you rename this on your item name 
+### 2• Create json file In folder items, you can rename this on your item name 
 <br></br>
 ![alt text](https://github.com/Refaltor77/CustomItem/blob/main/images/tuto2.png)
 
